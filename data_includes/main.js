@@ -161,27 +161,33 @@ PennController("trial2" ,
 	       newText ("<p> Pentru a răsplăti puiul de dragon, fă click pe mărul care este răsplata sa, în cazul acesta, mărul mic.</p>")
 	       ,
 	  
-	       newImage("bigapple", "bigapple.png")
+	      newImage("hugeapple", "hugeapple.png")
+        .settings.size(200,200)
+        // .print()
+	       ,
+	      newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newImage("smallapple", "smallapple.png")
+	          newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(450,200)
-        .settings.add( 0 , 0 , getImage("bigapple") )
-        .settings.add( 250 , 0 , getImage("smallapple") )
+    newCanvas(700,200)
+        .settings.add( 0 , 0 , getImage("hugeapple") )
+        .settings.add( 250 , 0 , getImage("bigapple") )
+	  .settings.add(500, 0 , getImage("smallapple") )
         .print()
 	       ,
-	       // newKey("FJ")
+	    
 newSelector()
-    .settings.add( getImage("bigapple") , getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J"   )
+    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J")
     .settings.log()
     .wait()
 )
-.log( "ID" , getVar("ID"))
+   
+.log( "ID" , getVar("ID") )
 ;
 
 	        
