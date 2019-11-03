@@ -411,7 +411,7 @@ newText ("<p> Când puiul de dragon oferă o descriere bună, dar nu cea mai bun
 	       newKey(" ")
         .wait()
 )
-;	
+
 	.log( "ID" , getVar("ID"))
 ;
 	    
