@@ -1968,7 +1968,7 @@ PennController ("experiment",
 		newImage ("cowshadowtwocowsonstage","cowshadowtwocowsonstage.png")
                .print ()
 		,
-		newText ("<p> Puiul de dragon Flurry: Poate că este pisica portocalie.</p>")
+		newText ("<p> Puiul de dragon Flurry: Poate că este vaca portocalie.</p>")
 		,
 		newText ("<p>  Cum vei răsplăti puiul de dragon? </p>")
 		,
